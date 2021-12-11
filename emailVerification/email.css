@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: #2e2e2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 250px;
+    width: 400px;
+    background: transparent;
+    box-shadow: 3px 3px 56px rgba(0,0,0,60%);
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-family: 'Lobster', cursive;
+    letter-spacing: 5px;
+    color: #000;
+    font-size:40px;
+    margin: 2rem 0;
+}
+h3{
+    font-family: 'Courgette', cursive;
+    font-size: 24px;
+    color: orangered;
+    margin-bottom: 1rem;
+}
+.email{
+    height: 15%;
+    width: 90%;
+    background: transparent;
+    box-shadow: inset 3px 3px 47px rgba(0,0,0,40%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+input{
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 1rem;
+    margin-right: 1rem;
+}
+#indicator{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #000;
+    margin-right: 1rem;
+    box-shadow: 3px 3px 3px 50px red;
+}
+
+@media (max-width: 428px) {
+    .container {
+        height: 242px;
+        width: 342px;
+        background: transparent;
+        box-shadow: 3px 3px 56px rgb(0 0 0 / 60%);
+        text-align: center;
+        border-radius: 37px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        font-family: 'Lobster', cursive;
+        letter-spacing: 5px;
+        color: #000;
+        font-size: 33px;
+        margin: 2rem 0;
+    }
+    
+    h3 {
+        font-family: 'Courgette', cursive;
+        font-size: 21px;
+        color: orangered;
+        margin-bottom: 2rem;
+    }
+}
+
+::selection{
+    color: orangered;
+}
